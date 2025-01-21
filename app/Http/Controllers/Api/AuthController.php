@@ -47,6 +47,18 @@ class AuthController extends Controller
     }
 
     /**
+     * @param Request $request
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function logout(Request $request): \Illuminate\Http\JsonResponse
+    {
+        $request->user()->currentAccessToken()->delete();
+
+        return response()->json();
+    }
+
+    /**
      * Create token for user
      * @param \App\Models\User $user
      *
