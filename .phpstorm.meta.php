@@ -948,7 +948,7 @@ namespace PHPSTORM_META {
             'filesystems.disks.s3.use_path_style_endpoint' => 'boolean',
             'filesystems.disks.s3.throw' => 'boolean',
             'filesystems.disks.s3.report' => 'boolean',
-            'filesystems.links./Users/abraham/Documents/Cursos/Laravel/Laravel Roles con Spatie Permissions - YT Code WithLuis/roles-with-spatie-permissions/public/storage' => 'string',
+            'filesystems.links./Users/abraham/Documents/Cursos/Laravel/Laravel Roles con Spatie PermissionsEnum - YT Code WithLuis/roles-with-spatie-permissions/public/storage' => 'string',
             'logging.default' => 'string',
             'logging.deprecations.channel' => 'NULL',
             'logging.deprecations.trace' => 'boolean',
@@ -1375,7 +1375,7 @@ namespace PHPSTORM_META {
             'filesystems.disks.s3.use_path_style_endpoint' => 'boolean',
             'filesystems.disks.s3.throw' => 'boolean',
             'filesystems.disks.s3.report' => 'boolean',
-            'filesystems.links./Users/abraham/Documents/Cursos/Laravel/Laravel Roles con Spatie Permissions - YT Code WithLuis/roles-with-spatie-permissions/public/storage' => 'string',
+            'filesystems.links./Users/abraham/Documents/Cursos/Laravel/Laravel Roles con Spatie PermissionsEnum - YT Code WithLuis/roles-with-spatie-permissions/public/storage' => 'string',
             'logging.default' => 'string',
             'logging.deprecations.channel' => 'NULL',
             'logging.deprecations.trace' => 'boolean',
@@ -1802,7 +1802,7 @@ namespace PHPSTORM_META {
             'filesystems.disks.s3.use_path_style_endpoint' => 'boolean',
             'filesystems.disks.s3.throw' => 'boolean',
             'filesystems.disks.s3.report' => 'boolean',
-            'filesystems.links./Users/abraham/Documents/Cursos/Laravel/Laravel Roles con Spatie Permissions - YT Code WithLuis/roles-with-spatie-permissions/public/storage' => 'string',
+            'filesystems.links./Users/abraham/Documents/Cursos/Laravel/Laravel Roles con Spatie PermissionsEnum - YT Code WithLuis/roles-with-spatie-permissions/public/storage' => 'string',
             'logging.default' => 'string',
             'logging.deprecations.channel' => 'NULL',
             'logging.deprecations.trace' => 'boolean',
@@ -2065,7 +2065,7 @@ namespace PHPSTORM_META {
     override(\optional(0), type(0));
 
             registerArgumentsSet('auth', );
-        registerArgumentsSet('configs', 
+        registerArgumentsSet('configs',
 'app.name','app.env','app.debug','app.url','app.frontend_url',
 'app.asset_url','app.timezone','app.locale','app.fallback_locale','app.faker_locale',
 'app.cipher','app.key','app.previous_keys','app.maintenance.driver','app.maintenance.store',
@@ -2106,7 +2106,7 @@ namespace PHPSTORM_META {
 'filesystems.disks.public.driver','filesystems.disks.public.root','filesystems.disks.public.url','filesystems.disks.public.visibility','filesystems.disks.public.throw',
 'filesystems.disks.public.report','filesystems.disks.s3.driver','filesystems.disks.s3.key','filesystems.disks.s3.secret','filesystems.disks.s3.region',
 'filesystems.disks.s3.bucket','filesystems.disks.s3.url','filesystems.disks.s3.endpoint','filesystems.disks.s3.use_path_style_endpoint','filesystems.disks.s3.throw',
-'filesystems.disks.s3.report','filesystems.links./Users/abraham/Documents/Cursos/Laravel/Laravel Roles con Spatie Permissions - YT Code WithLuis/roles-with-spatie-permissions/public/storage','logging.default','logging.deprecations.channel','logging.deprecations.trace',
+'filesystems.disks.s3.report','filesystems.links./Users/abraham/Documents/Cursos/Laravel/Laravel Roles con Spatie PermissionsEnum - YT Code WithLuis/roles-with-spatie-permissions/public/storage','logging.default','logging.deprecations.channel','logging.deprecations.trace',
 'logging.channels.stack.driver','logging.channels.stack.channels','logging.channels.stack.ignore_exceptions','logging.channels.single.driver','logging.channels.single.path',
 'logging.channels.single.level','logging.channels.single.replace_placeholders','logging.channels.daily.driver','logging.channels.daily.path','logging.channels.daily.level',
 'logging.channels.daily.days','logging.channels.daily.replace_placeholders','logging.channels.slack.driver','logging.channels.slack.url','logging.channels.slack.username',
@@ -2151,10 +2151,10 @@ namespace PHPSTORM_META {
 'ide-helper.interfaces','ide-helper.model_camel_case_properties','ide-helper.type_overrides.integer','ide-helper.type_overrides.boolean','ide-helper.include_class_docblocks',
 'ide-helper.force_fqn','ide-helper.use_generics_annotations','ide-helper.additional_relation_types','ide-helper.additional_relation_return_types','ide-helper.enforce_nullable_relationships',
 'ide-helper.post_migrate','ide-helper.macroable_traits','tinker.commands','tinker.alias','tinker.dont_alias',);
-        registerArgumentsSet('middleware', 
+        registerArgumentsSet('middleware',
 'web','api',);
         registerArgumentsSet('routes', 'storage.local',);
-        registerArgumentsSet('views', 
+        registerArgumentsSet('views',
 'welcome','laravel-exceptions-renderer::components.card','laravel-exceptions-renderer::components.context','laravel-exceptions-renderer::components.editor','laravel-exceptions-renderer::components.header',
 'laravel-exceptions-renderer::components.icons.chevron-down','laravel-exceptions-renderer::components.icons.chevron-up','laravel-exceptions-renderer::components.icons.computer-desktop','laravel-exceptions-renderer::components.icons.moon','laravel-exceptions-renderer::components.icons.sun',
 'laravel-exceptions-renderer::components.layout','laravel-exceptions-renderer::components.navigation','laravel-exceptions-renderer::components.theme-switcher','laravel-exceptions-renderer::components.trace','laravel-exceptions-renderer::components.trace-and-editor',
@@ -2163,7 +2163,7 @@ namespace PHPSTORM_META {
 'laravel-exceptions::minimal','notifications::email','pagination::bootstrap-4','pagination::bootstrap-5','pagination::default',
 'pagination::semantic-ui','pagination::simple-bootstrap-4','pagination::simple-bootstrap-5','pagination::simple-default','pagination::simple-tailwind',
 'pagination::tailwind',);
-        registerArgumentsSet('translations', 
+        registerArgumentsSet('translations',
 'auth.failed','auth.password','auth.throttle','pagination.previous','pagination.next',
 'passwords.reset','passwords.sent','passwords.throttled','passwords.token','passwords.user',
 'validation.accepted','validation.accepted_if','validation.active_url','validation.after','validation.after_or_equal',
@@ -2192,7 +2192,7 @@ namespace PHPSTORM_META {
 'validation.same','validation.size.array','validation.size.file','validation.size.numeric','validation.size.string',
 'validation.starts_with','validation.string','validation.timezone','validation.unique','validation.uploaded',
 'validation.uppercase','validation.url','validation.ulid','validation.uuid','validation.custom.attribute-name.rule-name',);
-        registerArgumentsSet('env', 
+        registerArgumentsSet('env',
 'APP_NAME','APP_ENV','APP_KEY','APP_DEBUG','APP_TIMEZONE',
 'APP_URL','APP_LOCALE','APP_FALLBACK_LOCALE','APP_FAKER_LOCALE','APP_MAINTENANCE_DRIVER',
 'PHP_CLI_SERVER_WORKERS','BCRYPT_ROUNDS','LOG_CHANNEL','LOG_STACK','LOG_DEPRECATIONS_CHANNEL',
@@ -2204,7 +2204,7 @@ namespace PHPSTORM_META {
 'MAIL_PORT','MAIL_USERNAME','MAIL_PASSWORD','MAIL_FROM_ADDRESS','MAIL_FROM_NAME',
 'AWS_ACCESS_KEY_ID','AWS_SECRET_ACCESS_KEY','AWS_DEFAULT_REGION','AWS_BUCKET','AWS_USE_PATH_STYLE_ENDPOINT',
 'VITE_APP_NAME',);
-        
+
                 expectedArguments(\Illuminate\Support\Facades\Gate::has(), 0, argumentsSet('auth'));
     expectedArguments(\Illuminate\Support\Facades\Gate::allows(), 0, argumentsSet('auth'));
     expectedArguments(\Illuminate\Support\Facades\Gate::denies(), 0, argumentsSet('auth'));
@@ -2268,5 +2268,5 @@ namespace PHPSTORM_META {
                 expectedArguments(\Illuminate\Contracts\Translation\Translator::get(), 0, argumentsSet('translations'));
                 expectedArguments(\env(), 0, argumentsSet('env'));
                 expectedArguments(\Illuminate\Support\Env::get(), 0, argumentsSet('env'));
-            
+
 }
