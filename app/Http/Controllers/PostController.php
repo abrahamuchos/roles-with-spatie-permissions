@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Enums\RolesEnum;
 use App\Http\Resources\Post\PostResource;
 use App\Models\Post;
+use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Request;
@@ -30,6 +31,19 @@ class PostController extends Controller
         }
 
         return PostResource::collection($posts);
+    }
+
+    /**
+     * @param Post $post
+     *
+     * @return PostResource
+     * @throws AuthorizationException
+     */
+    public function show(Post $post): PostResource
+    {
+        Gate::authorize('view', $post);
+
+        return new PostResource($post);
     }
 
 
