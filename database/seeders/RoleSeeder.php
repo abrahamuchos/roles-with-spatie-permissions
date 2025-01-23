@@ -31,16 +31,16 @@ class RoleSeeder extends Seeder
         $userRole->syncPermissions([
             PermissionsEnum::VIEW_USER,
             PermissionsEnum::EDIT_USER,
-            PermissionsEnum::CREATE_BOOKS,
-            PermissionsEnum::VIEW_BOOKS,
-            PermissionsEnum::EDIT_BOOKS,
-            PermissionsEnum::DELETE_BOOKS,
+            PermissionsEnum::CREATE_POSTS,
+            PermissionsEnum::VIEW_POSTS,
+            PermissionsEnum::EDIT_POSTS,
+            PermissionsEnum::DELETE_POSTS,
         ]);
 
         //Guest user
         $guestUser = Role::create(['name' => RolesEnum::GUEST]);
         $guestUser->syncPermissions([
-            PermissionsEnum::VIEW_BOOKS
+            PermissionsEnum::VIEW_POSTS
         ]);
     }
 }

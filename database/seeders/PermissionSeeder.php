@@ -19,10 +19,10 @@ class PermissionSeeder extends Seeder
         Permission::create(['name' => PermissionsEnum::EDIT_USER]);
         Permission::create(['name' => PermissionsEnum::DELETE_USER]);
 
-        //Books PermissionsEnum
-        Permission::create(['name' => PermissionsEnum::VIEW_BOOKS]);
-        Permission::create(['name' => PermissionsEnum::CREATE_BOOKS]);
-        Permission::create(['name' => PermissionsEnum::EDIT_BOOKS]);
-        Permission::create(['name' => PermissionsEnum::DELETE_BOOKS]);
+        //Posts PermissionsEnum
+        Permission::create(['name' => PermissionsEnum::VIEW_POSTS]);
+        Permission::create(['name' => PermissionsEnum::CREATE_POSTS]);
+        Permission::create(['name' => PermissionsEnum::EDIT_POSTS]);
+        Permission::create(['name' => PermissionsEnum::DELETE_POSTS]);
     }
 }

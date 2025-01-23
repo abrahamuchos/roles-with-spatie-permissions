@@ -9,9 +9,9 @@ enum PermissionsEnum: string
     case EDIT_USER = 'edit_user';
     case DELETE_USER = 'delete_user';
 
-    case VIEW_BOOKS = 'view_books';
-    case CREATE_BOOKS = 'create_books';
-    case EDIT_BOOKS = 'edit_books';
-    case DELETE_BOOKS = 'delete_books';
+    case VIEW_POSTS = 'view_posts';
+    case CREATE_POSTS = 'create_posts';
+    case EDIT_POSTS = 'edit_posts';
+    case DELETE_POSTS = 'delete_posts';
 
 }
