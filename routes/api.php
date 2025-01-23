@@ -18,6 +18,7 @@ Route::group(['prefix' => 'v1'], function () {
         Route::get('posts/{post}', [PostController::class, 'show']);
         Route::post('posts', [PostController::class, 'store']);
         Route::patch('posts/{post}', [PostController::class, 'update']);
+        Route::delete('posts/{post}', [PostController::class, 'destroy']);
     });
 
 });

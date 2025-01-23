@@ -79,5 +79,19 @@ class PostController extends Controller
         return response()->json([], 200);
     }
 
+    /**
+     * @param Post $post
+     *
+     * @return \Illuminate\Http\JsonResponse
+     * @throws AuthorizationException
+     */
+    public function destroy(Post $post): \Illuminate\Http\JsonResponse
+    {
+        Gate::authorize('delete', $post);
+
+        //Simulate post deleting
+
+        return response()->json([], 204);
+    }
 
 }

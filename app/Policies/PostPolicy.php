@@ -3,6 +3,7 @@
 namespace App\Policies;
 
 use App\Enums\PermissionsEnum;
+use App\Enums\RolesEnum;
 use App\Models\Post;
 use App\Models\User;
 
@@ -45,7 +46,8 @@ class PostPolicy
      */
     public function delete(User $user, Post $post): bool
     {
-        return false;
+        return $user->hasRole(RolesEnum::ADMIN) && $user->can(PermissionsEnum::DELETE_POSTS) ||
+            $user->can(PermissionsEnum::DELETE_POSTS) && $user->id === $post->user_id;
     }
 
     /**
