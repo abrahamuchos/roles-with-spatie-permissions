@@ -37,7 +37,7 @@ class PostPolicy
      */
     public function update(User $user, Post $post): bool
     {
-        return false;
+        return $user->can(PermissionsEnum::EDIT_POSTS);
     }
 
     /**

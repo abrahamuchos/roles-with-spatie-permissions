@@ -49,5 +49,21 @@ class PostController extends Controller
         return response()->json([], 201);
     }
 
+    /**
+     * @param Request $request
+     * @param Post    $post
+     *
+     * @return \Illuminate\Http\JsonResponse
+     * @throws \Illuminate\Auth\Access\AuthorizationException
+     */
+    public function update(Request $request, Post $post): \Illuminate\Http\JsonResponse
+    {
+        Gate::authorize('update', $post);
+
+        //Simulate post updating
+
+        return response()->json([], 200);
+    }
+
 
 }
