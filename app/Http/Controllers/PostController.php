@@ -7,6 +7,7 @@ use App\Http\Resources\Post\PostResource;
 use App\Models\Post;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\Request;
 
 class PostController extends Controller
 {
@@ -30,4 +31,23 @@ class PostController extends Controller
 
         return PostResource::collection($posts);
     }
+
+
+    /**
+     * @param Request $request
+     *
+     * @return \Illuminate\Http\JsonResponse
+     * @throws \Illuminate\Auth\Access\AuthorizationException
+     */
+    public function store(Request $request): \Illuminate\Http\JsonResponse
+    {
+        Gate::authorize('create', Post::class);
+
+        //Simulate post creation
+
+
+        return response()->json([], 201);
+    }
+
+
 }

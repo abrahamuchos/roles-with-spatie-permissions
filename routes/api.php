@@ -16,6 +16,7 @@ Route::group(['prefix' => 'v1'], function () {
 
         //Posts
         Route::get('posts', [PostController::class, 'index']);
+        Route::post('posts', [PostController::class, 'store']);
     });
 
 });
