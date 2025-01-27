@@ -4,9 +4,7 @@ namespace Tests\Feature\User;
 
 use App\Enums\RolesEnum;
 use App\Models\User;
-use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Laravel\Sanctum\Sanctum;
 use Tests\TestCase;
 
