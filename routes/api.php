@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\UserController;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
@@ -12,6 +13,10 @@ Route::group(['prefix' => 'v1'], function () {
     //Auth Routes
     Route::middleware('auth:sanctum')->group(function(){
         Route::get('logout', [AuthController::class, 'logout']);
+
+        //Users
+        Route::get('users', [UserController::class, 'index']);
+
 
         //Posts
         Route::get('posts', [PostController::class, 'index']);
