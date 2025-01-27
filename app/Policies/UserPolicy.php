@@ -39,7 +39,8 @@ class UserPolicy
      */
     public function update(User $user, User $model): bool
     {
-        return false;
+        return $user->can(PermissionsEnum::VIEW_USER) && $user->id === $model->id
+            || $user->hasRole(RolesEnum::ADMIN) && $user->can(PermissionsEnum::VIEW_USER);
     }
 
     /**

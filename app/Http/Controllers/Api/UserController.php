@@ -57,4 +57,20 @@ class UserController extends Controller
 
         return response()->json([], 201);
     }
+
+    /**
+     * @param Request $request
+     * @param User    $user
+     *
+     * @return \Illuminate\Http\JsonResponse
+     * @throws AuthorizationException
+     */
+    public function update(Request $request, User $user): \Illuminate\Http\JsonResponse
+    {
+        Gate::authorize('update', $user);
+
+        //simulate update a user
+
+        return response()->json([], 200);
+    }
 }
