@@ -71,6 +71,23 @@ class UserController extends Controller
 
         //simulate update a user
 
-        return response()->json([], 200);
+        return response()->json();
+    }
+
+    /**
+     * Delete a user
+     *
+     * @param User $user
+     *
+     * @return \Illuminate\Http\JsonResponse
+     * @throws AuthorizationException
+     */
+    public function destroy(User $user): \Illuminate\Http\JsonResponse
+    {
+        Gate::authorize('delete', $user);
+
+        //Simula delete user
+
+        return response()->json();
     }
 }
