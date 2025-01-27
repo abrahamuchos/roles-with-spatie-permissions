@@ -70,7 +70,7 @@ interacts with Laravel Policies. It will also serve as a guide to understand the
 <br>
 [Laravel - Permissions Spatie - Basic usage](https://spatie.be/docs/laravel-permission/v6/basic-usage/role-permissions)
 <br>
-[Laravel Sanctum Documentation](Laravel Sanctum)
+[Laravel Sanctum Documentation](https://laravel.com/docs/11.x/sanctum)
 <br>
 [Laravel 11.x Documentation - Authorization (Creating Policies)](https://laravel.com/docs/11.x/authorization#creating-policies)
 <br>
