@@ -3,6 +3,7 @@
 namespace App\Policies;
 
 use App\Enums\PermissionsEnum;
+use App\Enums\RolesEnum;
 use App\Models\User;
 use Illuminate\Auth\Access\Response;
 
@@ -21,7 +22,8 @@ class UserPolicy
      */
     public function view(User $user, User $model): bool
     {
-        return false;
+        return $user->can(PermissionsEnum::VIEW_USER) && $user->id === $model->id
+            || $user->hasRole(RolesEnum::ADMIN) && $user->can(PermissionsEnum::VIEW_USER);
     }
 
     /**

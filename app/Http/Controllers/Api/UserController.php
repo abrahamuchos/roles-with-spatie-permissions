@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Enums\RolesEnum;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\User\UserResource;
 use App\Models\User;
@@ -25,6 +26,21 @@ class UserController extends Controller
         $users = User::all();
 
         return UserResource::collection($users);
+    }
+
+    /**
+     * Show a specific user
+     *
+     * @param User $user
+     *
+     * @return UserResource
+     * @throws AuthorizationException
+     */
+    public function show(User $user): UserResource
+    {
+        Gate::authorize('view', $user);
+
+        return new UserResource($user);
     }
 
 
