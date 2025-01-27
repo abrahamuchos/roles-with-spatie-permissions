@@ -31,7 +31,7 @@ class UserPolicy
      */
     public function create(User $user): bool
     {
-        return false;
+        return $user->can(PermissionsEnum::CREATE_USER);
     }
 
     /**

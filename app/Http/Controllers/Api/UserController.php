@@ -43,5 +43,18 @@ class UserController extends Controller
         return new UserResource($user);
     }
 
+    /**
+     * @param Request $request
+     *
+     * @return \Illuminate\Http\JsonResponse
+     * @throws AuthorizationException
+     */
+    public function store(Request $request): \Illuminate\Http\JsonResponse
+    {
+        Gate::authorize('create', User::class);
 
+        //simulate create a new user
+
+        return response()->json([], 201);
+    }
 }
